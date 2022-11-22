@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="">
+  <q-layout view="hHh Lpr lff">
     <!-- <q-header elevated class="glossy">
       <q-toolbar>
         <q-btn
@@ -74,7 +74,7 @@
         </q-item>
       </q-list>
     </q-drawer> -->
-    <HeaderLayout/>
+    <HeaderLayout class="text-black"/>
     <q-page-container>
       <router-view class="q-pl-lg q-pt-lg q-pr-xl" />
     </q-page-container>
@@ -83,15 +83,14 @@
 </template>
 
 <script>
-/* eslint-disable */
-import { defineAsyncComponent } from "vue";
+import { defineAsyncComponent } from 'vue'
 export default {
   name: 'LayoutDefault',
   components: {
-    HeaderLayout: defineAsyncComponent(() => import("./components/layout/Header")),
+    HeaderLayout: defineAsyncComponent(() => import('./components/layout/Header')),
     FooterLayout: defineAsyncComponent(() =>
-      import("./components/layout/Footer")
-    ),
+      import('./components/layout/Footer')
+    )
   },
   setup () {
     return {}
