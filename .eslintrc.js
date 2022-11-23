@@ -7,6 +7,7 @@ module.exports = {
     'plugin:vue/vue3-essential',
     '@vue/standard'
   ],
+  plugins: ['vue'],
   parserOptions: {
     parser: '@babel/eslint-parser'
   },
