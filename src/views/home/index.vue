@@ -1,8 +1,8 @@
 <template>
   <div class="">
     <HeaderPage />
-    <!-- <SubMainTop /> -->
-    <!-- <Main /> -->
+    <SubMainTop />
+    <Main />
     <div class="row">
     <!-- dijadikan satu, dibagi 2 kolom -->
       <div class="col-8">
@@ -27,9 +27,9 @@ import { defineAsyncComponent } from 'vue'
 export default {
   name: 'HomePage',
   components: {
-    HeaderPage: defineAsyncComponent(() => import('./containter/Header'))
-    // Main: defineAsyncComponent(() => import('./containter/Main')),
-    // SubMainTop: defineAsyncComponent(() => import('./containter/SubMainTop')),
+    HeaderPage: defineAsyncComponent(() => import('./containter/Header')),
+    SubMainTop: defineAsyncComponent(() => import('./containter/SubMainTop')),
+    Main: defineAsyncComponent(() => import('./containter/Main'))
     // SubMainMiddle: defineAsyncComponent(() => import('./containter/SubMainMiddle')),
     // LatestNews: defineAsyncComponent(() => import('./containter/LatestNews')),
     // HotTopic: defineAsyncComponent(() => import('./containter/HotTopic')),

@@ -9,15 +9,27 @@
       </div>
     </div>
     <div>
-      <q-tabs
-        v-model="tab"
-        indicator-color="transparent"
-        active-color="red"
-        class="text-white text-weight-bold q-py-sm"
-        style="background-color: #070D59;"
+      <q-toolbar
+        class="text-white fit row justify-around items-start content-start"
+        style="background-color: #070d59"
       >
-        <q-tab v-for="tab in tabOption" :key="tab.name" v-bind="tab" />
-      </q-tabs>
+        <q-tabs
+          v-model="tab"
+          indicator-color="transparent"
+          active-color="red"
+          class="text-white text-weight-bold q-py-sm"
+        >
+          <q-tab v-for="tab in tabOption" :key="tab.name" v-bind="tab" />
+        </q-tabs>
+        <q-btn
+          size="md"
+          square
+          color="red"
+          icon="search"
+          class="q-py-none q-px-sm"
+          style="border-radius: 10%"
+        />
+      </q-toolbar>
     </div>
   </div>
 </template>
@@ -42,7 +54,6 @@ export default {
       ]
     }
   }
-
 }
 </script>
 

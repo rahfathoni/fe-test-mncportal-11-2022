@@ -5,7 +5,9 @@
     style="height: 35px; border-color: black"
   >
     <q-toolbar>
-      <q-toolbar-title class="fit row justify-around items-start content-startt" style="">
+      <q-toolbar-title
+        class="fit row justify-around items-start content-startt"
+      >
         <div class="q-pb-md">
           <q-btn
             v-for="(item, i) in buttonLeftOption"
@@ -27,7 +29,11 @@
         <div class="text-right">
           <q-btn flat round size="sm" class="q-mr-md">
             <q-avatar square size="20px">
-              <q-img ratio="1" fit="contain" src="../../assets/icon/facebook.png" />
+              <q-img
+                ratio="1"
+                fit="contain"
+                src="../../assets/icon/facebook.png"
+              />
             </q-avatar>
           </q-btn>
           <q-btn flat round size="sm" class="q-mr-md">
