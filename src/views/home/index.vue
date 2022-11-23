@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="q-pb-xs">
     <HeaderPage />
     <SubMainTop />
     <Main />
