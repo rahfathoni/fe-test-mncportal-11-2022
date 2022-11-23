@@ -5,9 +5,8 @@
     style="height: 35px; border-color: black"
   >
     <q-toolbar>
-      <q-toolbar-title class="row q-my-none q-py-none" style="">
-        <div class="col-1"></div>
-        <div class="col q-pb-md">
+      <q-toolbar-title class="fit row justify-around items-start content-startt" style="">
+        <div class="q-pb-md">
           <q-btn
             v-for="(item, i) in buttonLeftOption"
             :key="i"
@@ -25,7 +24,7 @@
             icon="expand_more"
           />
         </div>
-        <div class="col text-right">
+        <div class="text-right">
           <q-btn flat round size="sm" class="q-mr-md">
             <q-avatar square size="20px">
               <q-img ratio="1" fit="contain" src="../../assets/icon/facebook.png" />
@@ -52,7 +51,6 @@
             </q-avatar>
           </q-btn>
         </div>
-        <div class="col-1"></div>
       </q-toolbar-title>
     </q-toolbar>
   </q-header>
