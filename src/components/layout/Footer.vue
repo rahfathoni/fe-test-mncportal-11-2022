@@ -102,7 +102,7 @@
             class="text-white text-weight-bold q-mr-lg"
             style="font-size: 20px"
           >
-            Kanal Utama
+            KANAL UTAMA
           </div>
         </div>
         <div class="row">
