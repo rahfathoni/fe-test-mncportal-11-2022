@@ -2,7 +2,9 @@
 
 Frontend Test from MNC Portal - Sportstars.id
 
-## HOW TO OPEN (Temporary)
+## URL
+        https://sportstars-mnc-fathoni.web.app
+## HOW TO OPEN FROM REPOSITORY
     1. git clone https://github.com/rahfathoni/fe-test-mncportal-11-2022.git
     2. npm install
     3. npm run serve
