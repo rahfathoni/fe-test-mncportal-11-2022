@@ -1,9 +1,9 @@
 <template>
-  <div class="home">
-    Multimedia
-    <p v-for="n in 2" :key="n">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil praesentium molestias a adipisci, dolore vitae odit, quidem consequatur optio voluptates asperiores pariatur eos numquam rerum delectus commodi perferendis voluptate?
-    </p>
+  <div class="q-pa-md" style="background-color: #24326F">
+    <div class="text-white text-weight-bold" style="font-size: 20px">
+      MULTIMEDIA
+    </div>
+    <q-separator class="q-mt-sm q-mb-sm" color="red" size="5px" />
   </div>
 </template>
 

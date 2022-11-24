@@ -10,12 +10,12 @@
             <SubMainMiddle />
             <LatestNews />
             <MostPopular />
-            <!-- <Multimedia /> -->
+            <Multimedia />
           </div>
           <div class="col-4 q-pl-lg">
             <EditorChoice />
             <HotTopic />
-            <!-- <Statistik /> -->
+            <Statistik />
           </div>
         </div>
       </div>
@@ -35,9 +35,9 @@ export default {
     LatestNews: defineAsyncComponent(() => import('./containter/LatestNews')),
     HotTopic: defineAsyncComponent(() => import('./containter/HotTopic')),
     EditorChoice: defineAsyncComponent(() => import('./containter/EditorChoice')),
-    MostPopular: defineAsyncComponent(() => import('./containter/MostPopular'))
-    // Multimedia: defineAsyncComponent(() => import('./containter/Multimedia')),
-    // Statistik: defineAsyncComponent(() => import('./containter/Statistik'))
+    MostPopular: defineAsyncComponent(() => import('./containter/MostPopular')),
+    Multimedia: defineAsyncComponent(() => import('./containter/Multimedia')),
+    Statistik: defineAsyncComponent(() => import('./containter/Statistik'))
   }
 }
 </script>
