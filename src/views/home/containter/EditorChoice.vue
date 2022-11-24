@@ -37,9 +37,9 @@
             {{ newsList[1].title }}
           </div>
           <div class="q-pl-xs q-pt-sm">
-            <q-icon name="event_available" color="grey-6" size="sm" />
+            <q-icon name="event_available" color="grey-6" size="xs" />
             <span class="text-grey-7 text-weight-bold" style="font-size: 11px"> &nbsp; {{
-              newsList[1].date
+              newsList[1].shortDate
             }}</span>
           </div>
         </div>
@@ -61,9 +61,9 @@
             Bambang Pamungkas, Legenda Sepanjang Masa Persija
           </div>
           <div class="q-pl-xs q-pt-sm">
-            <q-icon name="event_available" color="grey-6" size="sm" />
+            <q-icon name="event_available" color="grey-6" size="xs" />
             <span class="text-grey-7 text-weight-bold" style="font-size: 11px"> &nbsp; {{
-              newsList[2].date
+              newsList[2].shortDate
             }}</span>
           </div>
         </div>
@@ -85,9 +85,9 @@
             {{ newsList[4].title }}
           </div>
           <div class="q-pl-xs q-pt-sm">
-            <q-icon name="event_available" color="grey-6" size="sm" />
+            <q-icon name="event_available" color="grey-6" size="xs" />
             <span class="text-grey-7 text-weight-bold" style="font-size: 11px"> &nbsp; {{
-              newsList[4].date
+              newsList[4].shortDate
             }}</span>
           </div>
         </div>
@@ -109,9 +109,9 @@
             {{ newsList[5].title }}
           </div>
           <div class="q-pl-xs q-pt-sm">
-            <q-icon name="event_available" color="grey-6" size="sm" />
+            <q-icon name="event_available" color="grey-6" size="xs" />
             <span class="text-grey-7 text-weight-bold" style="font-size: 11px"> &nbsp; {{
-              newsList[5].date
+              newsList[5].shortDate
             }}</span>
           </div>
         </div>

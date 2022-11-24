@@ -17,9 +17,9 @@
           {{ newsList[1].category }}
         </div>
         <div class="q-pt-xs">
-          <q-icon name="event_available" color="grey-6" size="sm" />
+          <q-icon name="event_available" color="grey-6" size="xs" />
           <span class="text-grey-7 text-weight-bold" style="font-size: 11px">
-            &nbsp; {{ newsList[1].date }}</span
+            &nbsp; {{ newsList[1].shortDate }}</span
           >
         </div>
         <div

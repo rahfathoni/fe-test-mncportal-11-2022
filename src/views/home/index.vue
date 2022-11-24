@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pb-lg">
+  <div class="q-pb-xl">
     <HeaderPage />
     <SubMainTop />
     <Main />
@@ -9,7 +9,7 @@
           <div class="col-8">
             <SubMainMiddle />
             <LatestNews />
-            <!-- <MostPopular /> -->
+            <MostPopular />
             <!-- <Multimedia /> -->
           </div>
           <div class="col-4 q-pl-lg">
@@ -34,8 +34,8 @@ export default {
     SubMainMiddle: defineAsyncComponent(() => import('./containter/SubMainMiddle')),
     LatestNews: defineAsyncComponent(() => import('./containter/LatestNews')),
     HotTopic: defineAsyncComponent(() => import('./containter/HotTopic')),
-    EditorChoice: defineAsyncComponent(() => import('./containter/EditorChoice'))
-    // MostPopular: defineAsyncComponent(() => import('./containter/MostPopular')),
+    EditorChoice: defineAsyncComponent(() => import('./containter/EditorChoice')),
+    MostPopular: defineAsyncComponent(() => import('./containter/MostPopular'))
     // Multimedia: defineAsyncComponent(() => import('./containter/Multimedia')),
     // Statistik: defineAsyncComponent(() => import('./containter/Statistik'))
   }
