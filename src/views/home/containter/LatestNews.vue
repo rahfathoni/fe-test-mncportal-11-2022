@@ -72,6 +72,7 @@
         </q-img>
       </div>
     </div>
+    <q-separator class="q-my-lg" color="grey-3" size="2px" />
   </div>
 </template>
 
