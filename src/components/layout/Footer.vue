@@ -23,7 +23,7 @@
             class="q-pa-sm bg-white q-mr-lg"
             style="border-radius: 3px"
           >
-            <q-avatar size="28px">
+            <q-avatar square size="28px">
               <q-img
                 ratio="1"
                 fit="contain"
@@ -38,7 +38,7 @@
             class="q-pa-sm bg-white q-mr-lg"
             style="border-radius: 3px"
           >
-            <q-avatar size="28px">
+            <q-avatar square size="28px">
               <q-img src="../../assets/icon/twitter.png" />
             </q-avatar>
           </q-btn>
@@ -49,7 +49,7 @@
             class="q-pa-sm bg-white q-mr-lg"
             style="border-radius: 3px"
           >
-            <q-avatar size="28px">
+            <q-avatar square size="28px">
               <q-img src="../../assets/icon/instagram_icon.png" />
             </q-avatar>
           </q-btn>
@@ -60,7 +60,7 @@
             class="q-pa-sm bg-white q-mr-lg"
             style="border-radius: 3px"
           >
-            <q-avatar size="28px">
+            <q-avatar square size="28px">
               <q-img src="../../assets/icon/Subtract.png" />
             </q-avatar>
           </q-btn>
@@ -71,7 +71,7 @@
             class="q-pa-sm bg-white q-mr-lg"
             style="border-radius: 3px"
           >
-            <q-avatar size="28px">
+            <q-avatar square size="28px">
               <q-img src="../../assets/icon/tiktok_fill.png" />
             </q-avatar>
           </q-btn>
