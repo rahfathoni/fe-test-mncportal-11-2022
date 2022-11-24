@@ -6,7 +6,7 @@
   >
     <div class="col-9">
       <div class="fit row wrap justify-start items-start content-start">
-        <div v-if="newsList && newsList.length >= 0" class="col-8 q-pr-sm">
+        <div v-if="newsList && newsList.length >= 0" class="col-8 q-pr-sm imgBox">
           <q-img fit="fill" height="auto" src="@/assets/pic/Rectangle_55.png">
             <q-btn
               v-if="newsList[0].isMedia"
@@ -37,11 +37,11 @@
                 >
               </div>
               <div
-                v-if="newsList[0].specialtag"
+                v-if="newsList[0].specialTag"
                 class="row q-pt-sm"
                 style="font-size: 14px; color: red"
               >
-                {{ newsList[0].specialtag }}
+                {{ newsList[0].specialTag }}
               </div>
               <div class="row q-pt-sm" style="font-size: 22px">
                 <b>{{ newsList[0].title }}</b>
@@ -54,7 +54,7 @@
         </div>
         <div v-if="newsList && newsList.length >= 1" class="col-4">
           <div class="fit row wrap justify-start items-start content-start">
-            <div v-if="newsList && newsList.length >= 1" class="col-12">
+            <div v-if="newsList && newsList.length >= 1" class="col-12 imgBox">
               <q-img src="../../../assets/pic/MaskGroup.png">
                 <q-btn
                   v-if="newsList[1].isMedia"
@@ -97,7 +97,7 @@
                 </div>
               </q-img>
             </div>
-            <div v-if="newsList && newsList.length >= 2" class="col-12">
+            <div v-if="newsList && newsList.length >= 2" class="col-12 imgBox">
               <q-img
                 class="q-mt-xs"
                 src="../../../assets/pic/Rectangle_286.png"
@@ -149,7 +149,7 @@
     </div>
     <div class="col-9 q-pt-sm">
       <div class="fit row wrap justify-around items-start content-start">
-        <div v-if="newsList && newsList.length >= 3" class="col-4 q-pr-sm">
+        <div v-if="newsList && newsList.length >= 3" class="col-4 q-pr-sm imgBox">
           <q-img class="q-mt-xs" src="../../../assets/pic/Rectangle_287.png">
             <q-btn
               v-if="newsList[3].isMedia"
@@ -192,7 +192,7 @@
             </div>
           </q-img>
         </div>
-        <div v-if="newsList && newsList.length >= 4" class="col-4 q-pr-sm">
+        <div v-if="newsList && newsList.length >= 4" class="col-4 q-pr-sm imgBox">
           <q-img class="q-mt-xs" src="../../../assets/pic/Rectangle_288.png">
             <q-btn
               v-if="newsList[4].isMedia"
@@ -235,7 +235,7 @@
             </div>
           </q-img>
         </div>
-        <div v-if="newsList && newsList.length >= 5" class="col-4">
+        <div v-if="newsList && newsList.length >= 5" class="col-4 imgBox">
           <q-img class="q-mt-xs" src="../../../assets/pic/Rectangle_289.png">
             <q-btn
               v-if="newsList[5].isMedia"
@@ -312,4 +312,17 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.imgBox { /* now a container for the image */
+  display: inline-block; /* shrink wrap to image */
+  overflow: hidden; /* hide the excess */
+}
+.imgBox img {
+  display: block; /* no whitespace */
+  transition: .3s ease-in-out;
+}
+.imgBox:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+</style>

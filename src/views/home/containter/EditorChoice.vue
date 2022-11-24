@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="">
     <div class="text-black text-weight-bold" style="font-size: 20px">
       EDITOR'S CHOICE
     </div>

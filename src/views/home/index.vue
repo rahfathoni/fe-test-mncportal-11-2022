@@ -10,7 +10,7 @@
           <div class="col-8">
             <!-- kolom 1 -->
             <SubMainMiddle />
-            <!-- <LatestNews /> -->
+            <LatestNews />
             <!-- <MostPopular /> -->
             <!-- <Multimedia /> -->
           </div>
@@ -35,7 +35,7 @@ export default {
     SubMainTop: defineAsyncComponent(() => import('./containter/SubMainTop')),
     Main: defineAsyncComponent(() => import('./containter/Main')),
     SubMainMiddle: defineAsyncComponent(() => import('./containter/SubMainMiddle')),
-    // LatestNews: defineAsyncComponent(() => import('./containter/LatestNews')),
+    LatestNews: defineAsyncComponent(() => import('./containter/LatestNews')),
     // HotTopic: defineAsyncComponent(() => import('./containter/HotTopic')),
     EditorChoice: defineAsyncComponent(() => import('./containter/EditorChoice'))
     // MostPopular: defineAsyncComponent(() => import('./containter/MostPopular')),

@@ -91,7 +91,7 @@
           :key="item"
           class="row q-pt-md q-pl-xl"
         >
-          <div class="text-grey-5" style="font-size: 20px">
+          <div class="text-grey-5 link" style="font-size: 20px" @click="clickRedirect(item)">
             {{ item }}
           </div>
         </div>
@@ -112,7 +112,7 @@
               :key="item"
               class="row q-pt-md q-pl-xl"
             >
-              <div class="text-grey-5" style="font-size: 20px">
+              <div class="text-grey-5 link" style="font-size: 20px" @click="clickRedirect(item)">
                 {{ item }}
               </div>
             </div>
@@ -123,7 +123,7 @@
               :key="item"
               class="row q-pt-md q-pl-sm"
             >
-              <div class="text-grey-5" style="font-size: 20px">
+              <div class="text-grey-5 link" style="font-size: 20px" @click="clickRedirect(item)">
                 {{ item }}
               </div>
             </div>
@@ -146,6 +146,12 @@
 export default {
   name: 'FooterLayout',
   setup () {
+    const clickRedirect = (item) => {
+      if (item) {
+        return ''
+      }
+    }
+
     return {
       aboutUsOption: [
         'Tentang Kami',
@@ -153,15 +159,22 @@ export default {
         'Kode Etik',
         'Term of Service',
         'Privacy Policy',
-        'Kontak Kamu'
+        'Kontak Kami'
       ],
       kanalOption: {
         left: ['Beranda', 'Bola', 'Balap', 'Ragam', 'Sportainment', 'Hobi'],
         right: ['Data Statistik', 'Multimedia', 'Index']
-      }
+      },
+      clickRedirect
     }
   }
 }
 </script>
 
-<style></style>
+<style>
+.link:hover {
+  /* text-decoration: underline; */
+  filter: brightness(300%);
+  cursor: pointer;
+}
+</style>

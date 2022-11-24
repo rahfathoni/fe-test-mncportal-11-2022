@@ -10,7 +10,7 @@ Frontend Test from MNC Portal - Sportstars.id
     3. npm run serve
 
 Start date: 22 November 2022\
-Finish date: 24 November 2022 - 16.00 WIB
+Finish date: 24 November 2022 - 23.59 WIB
 
 ## Project setup
 ```
